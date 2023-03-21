@@ -71,6 +71,8 @@ services:
       - MYSQL_USER=test
       - MYSQL_PASSWORD=test
       - MYSQL_ROOT_HOST=%
+    ports:
+      - "3306:3306"
 
 # Mercure is installed as a Caddy module, prevent the Flex recipe from installing another service
 ###> symfony/mercure-bundle ###
